@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$USER_HOME$/IdeaProjects/demo/angular/TodoList/.idea/TodoList.iml" filepath="$USER_HOME$/IdeaProjects/demo/angular/TodoList/.idea/TodoList.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/react-components.iml" filepath="$PROJECT_DIR$/.idea/react-components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react-props/.idea/react-props.iml" filepath="$PROJECT_DIR$/../react-props/.idea/react-props.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react-state/.idea/react-state.iml" filepath="$PROJECT_DIR$/../react-state/.idea/react-state.iml" />
     </modules>
   </component>
 </project>
