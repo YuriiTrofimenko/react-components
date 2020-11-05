@@ -1,4 +1,8 @@
-import React from 'react';
+import React from 'react'
+
+const clickHandler = () => {
+  alert('Click!')
+}
 
 function App() {
   const greetingString = 'Hell'
@@ -8,6 +12,7 @@ function App() {
       <Child/>
       <Child2/>
       <Child3/>
+      <button onClick={clickHandler}>Button</button>
     </div>
   );
 }
@@ -17,13 +22,21 @@ function Child () {
 }
 
 class Child2 extends React.Component {
+  private clickHandler = () => {
+    alert(this.greetingString + 'Click!')
+  }
+  private greetingString = 'Hell'
   render () {
+    // temp const, vars, methods
     return (
-      <ul>
-        <li>UA</li>
-        <li>RU</li>
-        <li>EN</li>
-      </ul>
+        <>
+          <ul>
+            <li>UA</li>
+            <li>RU</li>
+            <li>EN</li>
+          </ul>
+          <button onClick={this.clickHandler}>Button</button>
+        </>
     )
   }
 }
