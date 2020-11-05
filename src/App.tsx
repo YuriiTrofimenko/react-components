@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+  const greetingString = 'Hell'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>{greetingString}o React</p>
+      <Child/>
+      <Child2/>
+      <Child3/>
     </div>
   );
+}
+
+function Child () {
+  return <span>I am a child component</span>
+}
+
+class Child2 extends React.Component {
+  render () {
+    return (
+      <ul>
+        <li>UA</li>
+        <li>RU</li>
+        <li>EN</li>
+      </ul>
+    )
+  }
+}
+
+/*function Child3 () {
+  return (
+      <div>
+        <span>span1</span><span>span2</span>
+      </div>
+  )
+}*/
+
+function Child3 () {
+  return (
+      <>
+        <span>span1</span><span>span2</span>
+      </>
+  )
 }
 
 export default App;
